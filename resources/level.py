@@ -56,7 +56,7 @@ class Level:
         num_monster_c (integer, default=4): the number of monster supposed to be spawned in level C
         """
 
-        self.monster_list.extend(sample(range(self.bound_a), k=min(num_monster_a,len(range(self.bound_a)))))
+        self.monster_list.extend(sample(range(1, self.bound_a), k=min(num_monster_a,len(range(1, self.bound_a)))))
         self.monster_list.extend(sample(range(self.bound_a,self.bound_b), k=min(num_monster_b,len(range(self.bound_a,self.bound_b)))))
         self.monster_list.extend(sample(range(self.bound_b,self.finish-1), k=min(num_monster_c,len(range(self.bound_b,self.finish-1)))))
 

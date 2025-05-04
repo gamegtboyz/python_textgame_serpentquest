@@ -18,7 +18,6 @@ map = Level()
 map.boundbuild()    # set the game and stage length
 map.monster()       # spawn the monster
 map.mapdict()       # build up the map
-print(pd.DataFrame(map.map))
 
 # Start the game
 print("You're at the block 0, which is basically your home.")

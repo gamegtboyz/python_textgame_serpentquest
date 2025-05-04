@@ -31,6 +31,14 @@ while(you.hp > 0):
             dice = roll()
             you.position = min(you.position + dice, map.finish - 1)
             print(f"Your current position is: {you.position}")
+
+        # add the block to narrate the background
+        if(map.map[you.position]['stage'] != map.map[you.position - dice]['stage']):
+            if(map.map[you.position]['stage'] == 'Forest'):
+                print("Now you've out of town and enter the forest. This place looks not safe as in your hometown.")
+                
+            if(map.map[you.position]['stage'] == 'Castle'):
+                print("After the long journey in the forest, here lies the Abandoned Castle before your eyes. This place looks much more dangerousd like never before.")
             
         
         # this block is fight mode

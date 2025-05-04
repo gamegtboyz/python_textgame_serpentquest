@@ -9,7 +9,7 @@ class Fight:
         self.monster_hp = monster_hp
 
     def fight(self):
-        while(self.your_hp > 0 and self.monster_hp > 0):
+        while(self.your_hp >= 0 or self.monster_hp >= 0):
             print(f"Your HP = {self.your_hp} | Monster's HP = {self.monster_hp}")
             fight_command = input("Please roll the dice to encounter the monster:")
             if fight_command == 'roll':
@@ -23,17 +23,14 @@ class Fight:
                 if(your_dice == monster_dice): print("We're tie this time.")
 
                 if self.your_hp == 0:
-                    break
-
-        #if self.your_hp == 0:
-            #print(type(self.your_hp))
-            #pass
+                    return int(self.your_hp)
+                    
+                if self.monster_hp == 0:
+                    print(f"The monster has been defeated. Your remaining HP = {self.your_hp}")
+                    #print(type(self.your_hp))
+                    return int(self.your_hp)
         
-        if self.monster_hp == 0:
-            print(f"The monster has been defeated. Your remaining HP = {self.your_hp}")
-            print(type(self.your_hp))
-        
-        return self.your_hp
+        #return int(self.your_hp)
     
     def flee(self):
         if (self.your_hp > 3):

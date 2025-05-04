@@ -26,5 +26,5 @@ Each play, we randomly set the game length (a.k.a. Blocks) and where your enemy 
 **Gameplay: The Roam**\
 Simply roll the dice to play the game using 'roll' action. Occasionally, The game might offer you some choice of actions through the game.
 
-**Fight Mode**\
-Once you found an enemy. You need to roll the dice each turn to fight against your enemy. Who gets the greater dice points mean they could attack the other. The case of tie means you need to roll the dice again. You may have the 'run' option, but you need to sacrifice your HP for this actions also.
+**Gameplay: The Fight**\
+Once you found an enemy. You need to 'roll' the dice each turn to fight against your enemy. Who gets the greater dice points mean they could attack the other. The case of tie means you need to roll the dice again. You may have the 'run' option, but you need to sacrifice your HP for this actions also.

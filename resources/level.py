@@ -1,6 +1,8 @@
 from random import randint
 from random import sample
 
+from resources.character import Character
+
 class Level:
     
     bound_a = 10
@@ -79,3 +81,5 @@ class Level:
                              'stage': self.stage_map[i],
                              'monster': self.monster_map[i]})
             
+    def maplookup(self, position):
+        pass

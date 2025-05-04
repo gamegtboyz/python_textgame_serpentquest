@@ -1,43 +1,30 @@
-# Dragon Quest: The Game
+# Serpent Quest: The Game
 
-**How to play**
-We mainly play the game by rolling the dice.
-We have 2 modes in gameplay: Roam and Fight
+This is basically the single-player version of 'Snake and Ladder' game which takes you through the journey of your fictional character.
 
+Basially, we don't have the actual snake and ladder in this board, but we spawned the monster throughout the entire map, which you could face it if you're lucky enough.
 
 **The Components**
-- How to play
+- Objectives
+- Character
 - Level Design
-- The Character
+- Gameplay: The Roam
+- Gameplay: The Fight
 
 
+**Objectives**\
+Just simply survive yourself to the goal.
 
 
+**Character**\
+The game needs you to define your character name. We set the predefined HP for you. For now, HP is only your currency in this game. So, use it wisely.
 
-**The character**
-We design HP system into our character.
-When the HP reach 0, game fails.
-We set the max HP at 20.
-Still have no 
+**Level Design**\
+The only thing we could confirm you is that we have 3 stages in this game. Further you go, the more chance you'll found the enemy.
+Each play, we randomly set the game length (a.k.a. Blocks) and where your enemy spawn. So, each time you play it, you'll find the new experience.
 
-**Level Design**
-We have 30 blocks in the game.
-Some blocks contain the enemy.
-Once we found the enemy, we have to battle.
-We have just 1 class of enemy.
-Once we get to the 30th block, the game ends.
-The game has 3 stages; town, jungle, castle.
-we set the level bound randomly
+**Gameplay: The Roam**\
+Simply roll the dice to play the game using 'roll' action. Occasionally, The game might offer you some choice of actions through the game.
 
-
-
-**Roam Mode**
-We use the map that we build and splitted them into 3 stages: the Town, the Forest, and the Castle.
-Each map has increasing the difficulties
-
-
-
-**Gameplay**
-We have 2 play modes, roam and battle mode.
-roam mode - we roll the dice, some of them has the portal to go back and forth.
-
+**Fight Mode**\
+Once you found an enemy. You need to roll the dice each turn to fight against your enemy. Who gets the greater dice points mean they could attack the other. The case of tie means you need to roll the dice again. You may have the 'run' option, but you need to sacrifice your HP for this actions also.

@@ -4,7 +4,7 @@ from resources.dice import roll
 from resources.level import Level
 from resources.character import Character
 
-# set up the character's info
+# Set up the character's info
 
 name = input('Before the journey begins, please let me know how are you called: ')
 character = Character(name)

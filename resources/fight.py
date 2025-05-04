@@ -22,11 +22,16 @@ class Fight:
                 if(your_dice < monster_dice): self.your_hp -= 1
                 if(your_dice == monster_dice): print("We're tie this time.")
 
-        if self.your_hp == 0:
-            pass
+                if self.your_hp == 0:
+                    break
+
+        #if self.your_hp == 0:
+            #print(type(self.your_hp))
+            #pass
         
         if self.monster_hp == 0:
             print(f"The monster has been defeated. Your remaining HP = {self.your_hp}")
+            print(type(self.your_hp))
         
         return self.your_hp
     
@@ -37,8 +42,11 @@ class Fight:
             if(flee_command == 'y'):
                 self.your_hp -= 3
                 return self.your_hp
+            else:
+                print('You decide to fight this time, alright then.')
+                self.fight()
 
         if (self.your_hp <= 3):
-            print("You're too exhausted to run. Need to fight anyway.")
-            return self.your_hp
+            print("You're too exhausted to run. You need to fight anyway.")
+            self.fight()
             

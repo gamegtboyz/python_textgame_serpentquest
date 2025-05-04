@@ -16,15 +16,29 @@ class Fight:
                 your_dice = roll()
                 monster_dice = roll()
 
-                print(f"Your roll = {your_dice} | Monster roll = {monster_dice}")
+                print(f"Your roll = {your_dice} | Monster's roll = {monster_dice}")
 
                 if(your_dice > monster_dice): self.monster_hp -= 1
-                if(your_dice > monster_dice): self.your_hp -= 1
+                if(your_dice < monster_dice): self.your_hp -= 1
                 if(your_dice == monster_dice): print("We're tie this time.")
 
         if self.your_hp == 0:
-            print("You can't make it this time.")
+            pass
         
         if self.monster_hp == 0:
-            print("The monster has been defeated.")
+            print(f"The monster has been defeated. Your remaining HP = {self.your_hp}")
+        
+        return self.your_hp
+    
+    def flee(self):
+        if (self.your_hp > 3):
+            print(f"Your currrent HP = {self.your_hp}")
+            flee_command = input('If you decide to flee, you need to sacrifice 3HP to skip this fight. Are you sure (y/n)?')
+            if(flee_command == 'y'):
+                self.your_hp -= 3
+                return self.your_hp
+
+        if (self.your_hp <= 3):
+            print("You're too exhausted to run. Need to fight anyway.")
+            return self.your_hp
             

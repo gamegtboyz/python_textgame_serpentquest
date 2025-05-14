@@ -44,13 +44,15 @@ while(you.hp > 0):
         if(map.map[you.position]['monster'] == True):
             monster = Monster()
             fight_sandbox = Fight(your_hp = you.hp, monster_hp = monster.hp)
+            
             fight_or_flee = input("Here you found the monster. Do you want to 'fight' or 'flee'?")
             
+
             if fight_or_flee == 'flee':
                 you.hp = fight_sandbox.flee()                
 
-            if fight_or_flee == 'fight':            
-                you.hp = fight_sandbox.fight()            
+            elif fight_or_flee == 'fight':            
+                you.hp = fight_sandbox.fight()
         
         # this block shows when the game ends.
         if(you.position == map.finish-1):

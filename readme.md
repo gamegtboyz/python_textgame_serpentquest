@@ -15,6 +15,10 @@ Basially, we don't have the actual snake and ladder in this board, but we spawne
 **Objectives**\
 Just simply survive yourself to the goal.
 
+**How to play**
+Simply put, you have to type 'roll' the dice in this game when the prompt asked you to 'roll' it.
+Anyway, you might encounter the different command e.g. 'fight' or 'flee' when you enocunter the monster in this game.
+and 'y' or 'n' to confirm your flee if you have sufficient HP to flee the monster.
 
 **Character**\
 The game needs you to define your character name. We set the predefined HP for you. For now, HP is only your currency in this game. So, use it wisely.
